@@ -1,11 +1,12 @@
-collections = [7, 19, 7, 40, 19, 6, 25, 46, 33, 40]
+from function1 import collection_of_number
+from created_functions import my_len_function
 
 
-def sum_of_odd_index(numbers):
+def sum_of_third_index():
     total = 1
-    for index in range(0, len(collections), +2):
-        total = total * collections[index]
+    for index in range(0, my_len_function(collection_of_number()), +2):
+        total = total * collection_of_number()[index]
     return total
 
 
-print(sum_of_odd_index(collections))
+print(sum_of_third_index())

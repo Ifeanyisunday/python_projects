@@ -12,12 +12,4 @@ def sequential_collection():
     return final_numbers
 
 
-def add_element():
-    total = 0
-    sequential_collection()
-    for i in range(0, len(sequential_collection()), +2):
-        total += sequential_collection()[i]
-    return total
-
-
-print(add_element())
+print(sequential_collection())

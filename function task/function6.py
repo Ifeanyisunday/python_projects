@@ -1,11 +1,12 @@
-collections = [7, 19, 7, 40, 19, 6, 25, 46, 33, 40]
+from function1 import collection_of_number
+from created_functions import my_len_function
 
 
-def average(numbers):
+def average():
     total = 0
-    for index in range(0, len(collections)):
-        total = total + collections[index]
-    return total / len(collections)
+    for index in range(0, my_len_function(collection_of_number())):
+        total = total + collection_of_number()[index]
+    return total / my_len_function(collection_of_number())
 
 
-print(average(collections))
+print(average())

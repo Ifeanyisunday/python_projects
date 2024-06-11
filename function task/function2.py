@@ -1,11 +1,11 @@
-collections = [7, 19, 7, 40, 19, 6, 25, 46, 33, 40]
+from function1 import collection_of_number
 
 
-def find_length_without_len_function(numbers):
+def find_length_without_len_function():
     counter = 0
-    for number in numbers:
+    for number in collection_of_number():
         counter += 1
     return counter
 
 
-print(find_length_without_len_function(collections))
+print(find_length_without_len_function())

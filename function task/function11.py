@@ -1,10 +1,13 @@
-numbers1 = {6, 4, 3, 4, 8}
-numbers2 = {2, 3, 5, 4, 5, 6, 7}
+from function10 import sequential_collection
+from created_functions import my_len_function
 
 
-def union_of_two_sets(num1, num2):
-    union_numbers = num1.union(num2)
-    return union_numbers
+def add_element():
+    total = 0
+    sequential_collection()
+    for i in range(0, my_len_function(sequential_collection()), +2):
+        total += sequential_collection()[i]
+    return total
 
 
-print(union_of_two_sets(numbers1, numbers2))
+print(add_element())

@@ -1,17 +1,11 @@
-new_set = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5}
+from created_functions import my_clear_function
+
+new_set = {1, 2, 3, 4, 5}
 
 
-def find_largest_and_smallest(numbers):
-    largest = 0
-    for element in numbers:
-        if element > largest:
-            largest = element
-
-    smallest = numbers[0]
-    for element in numbers:
-        if element < smallest:
-            smallest = element
-    return largest, smallest
+def clear_set(numbers):
+    my_clear_function(numbers)
 
 
-print(find_largest_and_smallest(new_set))
+print(clear_set(new_set))
+print(new_set)
